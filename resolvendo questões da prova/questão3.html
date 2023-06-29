@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <script>
+        //PROBLEMA: Viajar para algum lugar
+        //Peça para o usuário informar para qual estado deseja realizar a viagem. (Rio Grande do Sul-RS ou Minas Gerais-MG). Peça também para informar quantos dias ficará em viagem. O usuário também deverá informar "quantos dinheiros" (R$) possui para gastar na viagem.
+        
+        //Considere que o custo diário de viagem para "RS" será de R$ 180,00 (180) e o custo diário de viagem para "MG" será de R$ 210,00 (210).
+        
+        //Calcule se o usuário possui dinheiro suficiente para realizar a viagem para o destino que pretende. Se o usuário puder viajar, o programa apresentará a mensagem "Boa viagem" e quantos dias poderá ficar no destino, além de qual será o custo da viagem. Caso não possa viajar o programa apresentará a mensagem "Sem Férias" e também apresentará "quantos dinheiros" (R$) estão faltando para realizar a viagem.
+    
+        //ENTRADA
+        const estadoViagem = prompt(`Qual estado você deseja viajar? Rio Grande do Sul (RS) ou Minas Gerais (MG)`).toUpperCase();
+        const diasViajando = Number(prompt(`Quantos dias você ficará viajando?`));
+        const dinheiroEmMaos = Number(prompt(`Quantos reais (R$) você tem disponivel para essa viagem?`).replace("," , "."));
+        //PROCESSAMENTO
+        const custoRS = diasViajando * 180;
+        const custoMG = diasViajando * 210;
+
+        const faltouRS = custoRS - dinheiroEmMaos;
+        const faltouMG = custoMG - dinheiroEmMaos;
+
+        let mensagemDias = `Boa Viagem! Aproveite os seus ${diasViajando} dias de viagem!`
+        let mensagemDia = `Boa Viagem! Aproveite o seu único dia de viagem!`
+
+        if (estadoViagem === "RS") {
+        if (custoRS < dinheiroEmMaos) {
+            if (diasViajando > 1) {
+                alert(`${mensagemDias} \nCusto:R$${custoRS.toFixed(2).replace("." , ",")}`);
+            }
+
+            else {
+                alert(`${mensagemDia} \nCusto: R$${custoRS.toFixed(2).replace("." , ",")}`);
+            }
+        }
+
+        else {
+            alert(`Sem férias! \nFaltou: R$${faltouRS.toFixed(2).replace("." , ",")}`);
+        }
+    }
+
+    else if (estadoViagem === "MG") {
+        if (custoMG < dinheiroEmMaos) {
+            if (diasViajando > 1) {
+                alert(`${mensagemDias} \nCusto:R$${custoMG.toFixed(2).replace("." , ",")}`);
+            }
+
+            else {
+                alert(`${mensagemDia} \nCusto: R$${custoMG.toFixed(2).replace("." , ",")}`);
+            }
+        }
+
+        else {
+            alert(`Sem férias! \nFaltou: R$${faltouRS.toFixed(2).replace("." , ",")}`);
+        }
+    }
+
+    else {
+        alert(`Sigla do estado inválido`);
+    }
+        //SAÍDA
+    
+    </script>
+</body>
+</html>
