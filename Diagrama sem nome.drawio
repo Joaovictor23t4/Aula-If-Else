@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-15T16:45:00.980Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="H17qJB73S7LSEq-7Oavd" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-15T16:53:26.452Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="CCqem1xIpt95UyEKletT" version="21.6.8" type="github">
   <diagram name="Página-1" id="Of1l5Ty5u5XjqeMRKGTt">
     <mxGraphModel dx="1139" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,9 +10,6 @@
         <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-1" value="&lt;div&gt;Inicio&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="320" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-2" value="&lt;div&gt;Inicio&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
-          <mxGeometry x="570" y="670" width="150" height="110" as="geometry" />
-        </mxCell>
         <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.531;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3Xf_2oQIhMBCi_jiA-Yd-3" target="3Xf_2oQIhMBCi_jiA-Yd-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -21,7 +18,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-3" value="&lt;div&gt;&quot;Informe a base do triângulo:&quot;&lt;/div&gt;" style="shape=display;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-3" value="&lt;div&gt;&quot;Informe a base&amp;nbsp;&lt;/div&gt;&lt;div&gt;do triângulo:&quot;&lt;/div&gt;" style="shape=display;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="325" y="170" width="125" height="90" as="geometry" />
         </mxCell>
         <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3Xf_2oQIhMBCi_jiA-Yd-4" target="3Xf_2oQIhMBCi_jiA-Yd-7">
@@ -36,8 +33,22 @@
         <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-7" value="&lt;div&gt;&quot;Informe a altura&lt;/div&gt;&lt;div&gt;&amp;nbsp;do triângulo:&quot;&lt;/div&gt;" style="shape=display;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="305" width="125" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3Xf_2oQIhMBCi_jiA-Yd-9" target="3Xf_2oQIhMBCi_jiA-Yd-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-9" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;altura&lt;/div&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="502.5" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3Xf_2oQIhMBCi_jiA-Yd-11" target="3Xf_2oQIhMBCi_jiA-Yd-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-11" value="&lt;div&gt;calculo&lt;/div&gt;&lt;div&gt;(base*altura)/2&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Xf_2oQIhMBCi_jiA-Yd-17" value="&lt;div&gt;&quot;A área do triângulo&lt;/div&gt;&lt;div&gt;é: ${area}&quot;&lt;/div&gt;" style="shape=delay;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="320" width="130" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
